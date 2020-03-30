@@ -40,7 +40,7 @@ echo "No! Mobile Number is not valid"
 fi
 echo enter password
 read password
-pat="^[A-Z]{1}[a-zA-z0-9]{7,}$"
+pat="[A-Z]+[a-zA-z0-9]{7}"
 if [[ $password  =~ $pat ]]
 then
 echo password is valid
