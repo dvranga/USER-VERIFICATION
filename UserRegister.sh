@@ -38,3 +38,12 @@ echo "Mobile Number is valid"
 else
 echo "No! Mobile Number is not valid"
 fi
+echo enter password
+read password
+pat="[a-zA-z0-9\]{8}$"
+if [[ $password  =~ $pat ]]
+then
+echo password is valid
+else
+echo password is not valid
+fi
