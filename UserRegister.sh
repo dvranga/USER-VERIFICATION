@@ -40,7 +40,7 @@ echo "No! Mobile Number is not valid"
 fi
 function checkPassword()
 {
-pat="^[a-zA-z0-9]{6,}[0-9A-Z]+|^[0-9A-Z]+[a-zA-z0-9]{6,}"
+pat="[A-Z]+[a-zA-z0-9]{6,}[0-9]+|[0-9]+[0-9A-Z]+[a-zA-z0-9]{6,}[A-Z]+"
 if [[ $1  =~ $pat ]]
 then
 echo $1 is valid
