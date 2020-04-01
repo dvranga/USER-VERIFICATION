@@ -12,7 +12,7 @@ fi
 }
 function validateEmail()
 {
-pat="^[a-zA-z]{3}[-_+.]{1}?[0-9]{3}?@(bridgelabz|gmail|yahoo|1|abc)(.com|.co|.net)(.au|.in)?$"
+pat="^[a-zA-z]{3}[-_+.]{1}?[0-9]{3}?@(bridgelabz|gmail|yahoo|1|abc)(.com|.co|.net|.com.com)(.au|.in)?$"
 if [[ $1 =~ $pat ]]
 then
 echo email is valid
